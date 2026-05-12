@@ -7,3 +7,8 @@ rige(Persona,N):-
     reinado(Persona,A,B),
     A=<N,
     N=<B.
+
+rige_lapso(R, Desde, Hasta) :-
+    reinado(R, Inicio, Fin),
+    Inicio =< Hasta,
+    Fin >= Desde.
